@@ -1,26 +1,8 @@
 body{
   text-align: center;
-<<<<<<< HEAD
   background: linear-gradient(to right, #ffffff -16%, #000000 123%);
 }
 
-<<<<<<< Updated upstream
-.filler{
-  height: 50vh;
-  background-image:url(../img/booms1.png);
-=======
-}
-
-.filler{
-  height: 50vh;
-  background-image:url(../img/booms3.png);
->>>>>>> master
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: .7;
-<<<<<<< HEAD
-=======
 #white{
   height: auto;
   float: right;
@@ -78,7 +60,4 @@ nav{
 
 .active{
   color: orange;
->>>>>>> Stashed changes
-=======
->>>>>>> master
 }
