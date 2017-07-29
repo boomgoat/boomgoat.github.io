@@ -1,63 +1,7 @@
-body{
-  text-align: center;
-  background: linear-gradient(to right, #ffffff -16%, #000000 123%);
-}
-
-#white{
-  height: auto;
-  float: right;
-  margin: 4.5em;
-  background-image: url(../Background/light.png);
-  z-index: 55;
-  display: inline-block;
-  box-shadow: 5px 9px 30px -14px #000000;
-  position: relative;
-}
-
-.intro{
-  border-bottom: 1px solid black;
-  padding-bottom: 2em;
-}
-
-.intro h1{
-  padding: 1em;
-}
-
-.intro h4{
-  padding: 4em;
-  padding-bottom: 0;
-}
-
-#logo{
-  float: right;
-  padding-top: 0;
-}
-
-.services{
-  padding-bottom: 50em;
-}
-
-.services h4{
-  padding: 5em;
-  padding-bottom: 0;
-}
-
-#black{
-  height: 80vh;
-  float: left;
-  margin: 2em;
-  position: fixed;
-  background-image: url(../Background/dark.png);
-  z-index: 0;
-  box-shadow: 5px 9px 30px -14px #000000;
-}
-
-nav{
-  color: white;
-  border-left: 1px solid white;
-  padding: 2em;
-}
-
-.active{
-  color: orange;
+.container-fluid{
+  background-image: url(../Images/ded.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
