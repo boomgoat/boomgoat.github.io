@@ -1,23 +1,53 @@
 ::-webkit-scrollbar {
     display: none;
 }
-
 .container-fluid{
-  background-image: url(../Images/ded.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   overflow-y: hidden;
 }
 
+.main_nav{
+  height: 99.5%;
+  position: fixed;
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+}
+
+.nav_item{
+  background-color: white;;
+  height: 3em;
+  margin-top: 40%;
+  display: block;
+  -webkit-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
+}
+
+.boom{
+  background-image: url(../Images/ded.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main_scroll{
+  overflow-y: scroll;
+  height: 100%;
+}
+
 .container{
-  margin: 7.5%;
+  background-image: url(../Images/ded.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 7.5%;
   -webkit-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
   box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
   height: 70%;
-  background-color: inherit;
+  background-color: white;
   overflow-x: hidden;
 }
 
@@ -63,4 +93,8 @@ ul li{
 .white h1{
   display: block;
   margin: 25%!important;
+}
+
+.footer{
+  height: 14.5%;
 }
