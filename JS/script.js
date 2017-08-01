@@ -5,8 +5,8 @@ $(document).ready(function(){
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('.container, .scrollable').animate({
-          scrollTop: $('.scrollable').scrollTop() + target.offset().top -125
+        $('.container-fluid, .main_scroll').animate({
+          scrollTop: $('.main_scroll').scrollTop() + target.offset().top -100
         }, 1000);
         return false;
       }

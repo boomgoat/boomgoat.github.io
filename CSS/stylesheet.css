@@ -6,30 +6,32 @@
   overflow-y: hidden;
 }
 
+* a{
+  text-decoration: none!important;
+}
+
 .main_nav{
   height: 99.5%;
   position: fixed;
   background-color: black;
+  background-image: url(../Background/stressed_linen.png);
   -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
 }
 
 .nav_item{
-  background-color: white;;
   height: 3em;
   margin-top: 40%;
   display: block;
-  -webkit-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
 }
 
 .boom{
-  background-image: url(../Images/ded.png);
+  background-image: url(../Images/bw.png);
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
+  height: 5em;
 }
 
 .main_scroll{
@@ -43,9 +45,9 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 7.5%;
-  -webkit-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 0px 0px 28px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
   height: 70%;
   background-color: white;
   overflow-x: hidden;
@@ -55,30 +57,47 @@
   margin: 2%;
 }
 
-.black{
-  background-color: black;
-  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  height: 90%;
-  position: fixed;
-}
-
 .title_box{
   margin-bottom: -8%!important;
+}
+
+.login{
+  height: 10em;
+}
+
+.login h4{
+  padding-top: 5em;
+  color: white;
+  font-family: 'Josefin Sans',sans-serif;
 }
 
 ul li{
   list-style: none;
   display: block;
-  margin: 10%!important;
+  margin-top: 30%!important;
+}
+
+li a{
+  color: white;
+  font-family: 'Josefin Sans',sans-serif;
+  text-decoration: none;
+}
+
+a:hover h4{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+a:visited h4{
+  color: rgba(255, 255, 255, 0.6)!important;
 }
 
 .scrollable{
   overflow-y: scroll;
   height: 100%;
   width: 70%!important;
-
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-left: none;
+  border-right: none;
 }
 
 .white{
