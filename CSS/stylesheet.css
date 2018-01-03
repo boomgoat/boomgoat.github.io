@@ -3,7 +3,6 @@
 }
 .container-fluid{
   height: 100vh;
-  overflow-y: hidden;
 }
 
 * a{
@@ -13,25 +12,29 @@
 .main_nav{
   height: 99.5%;
   position: fixed;
+  padding: 0!important;
+  margin: 0!important;
   background-color: black;
-  background-image: url(../Background/stressed_linen.png);
-  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
+  background-image: url(../Images/lodyas.png);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
 }
 
 .nav_item{
   height: 3em;
-  margin-top: 40%;
+  margin-top: 25%!important;
   display: block;
 }
 
 .boom{
-  background-image: url(../Images/bw.png);
+  background-image: url(../Images/ded.png);
+  background-color: white;
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   height: 5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .main_scroll{
@@ -44,21 +47,36 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 7.5%;
-  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  height: 70%;
+  padding: 0!important;
+  margin: 0!important;
+  border-bottom:  1px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
   background-color: white;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.sub_box{
-  margin: 2%;
+@keyframes eleanor {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
-.title_box{
-  margin-bottom: -8%!important;
+.eleanor{
+  background-color: black;
+  background-image: url(../Images/naturalblack.png);
+  height: 100%;
+}
+
+.eleanor img{
+  animation: eleanor 5s;
+}
+
+.eleanor h1{
+  position: absolute;
+  top: 10em;
+  color: white;
+  font-family: 'Josefin Sans',sans-serif;
+  animation: eleanor 5s;
+  animation-delay: 1s;
 }
 
 .login{
@@ -71,10 +89,15 @@
   font-family: 'Josefin Sans',sans-serif;
 }
 
+ul{
+  color: white;
+}
+
 ul li{
   list-style: none;
   display: block;
-  margin-top: 30%!important;
+  color: white;
+  margin-top: 20%!important;
 }
 
 li a{
@@ -84,34 +107,11 @@ li a{
 }
 
 a:hover h4{
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 a:visited h4{
-  color: rgba(255, 255, 255, 0.6)!important;
-}
-
-.scrollable{
-  overflow-y: scroll;
-  height: 100%;
-  width: 70%!important;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-left: none;
-  border-right: none;
-}
-
-.white{
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.75);
-  height: 90%;
-  display: block;
-}
-
-.white h1{
-  display: block;
-  margin: 25%!important;
+  color: rgba(0, 0, 0, 0.6)!important;
 }
 
 .footer{
