@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Talha Iqbal Syed</title>
   <link rel="icon" href="https://img.icons8.com/dusk/64/000000/developer.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Author: Talha Iqbal Syed">
   <!-- Bootstrap & jQuery -->
   <script src="https://kit.fontawesome.com/aaee47c90d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -18,7 +20,7 @@
 
 <body>
 
-  <div class="container-fluid main-body">
+  <div class="container-fluid main-body lazyload">
 
     <div id="side-bar" class="col-9 col-md-3 side-block">
       <ul class="navbar-nav">
@@ -63,10 +65,10 @@
     </section>
     
     <section class="about row" id="about">
-        <div class="title col-md-6 col-sm-12 col-12 offset-md-1">
+        <div class="title col-md-3 col-sm-12 col-12 offset-md-1">
           <h1>
             <span class="bold">
-              Here are a few <br>
+              Here are a few 
               things about me
             </span> <br>
           </h1>
@@ -74,7 +76,7 @@
             (That you probably don't want to hear)
           </p> -->
         </div>
-        <div class="title col-md-4 col-sm-12 col-12">
+        <div class="title col-md-6 offset-md-1 col-sm-12 col-12">
           <p>
               I am from Pakistan, born and raised and still 
               being raised according to some people. 
@@ -95,26 +97,35 @@
     
     <section class="portfolio" id="portfolio">
       <div class="row">
-        <div class="col-md-4 col-sm-6 col-12">
+        <div class="col-md-4 col-sm-6 col-12 portfolio-wrapper">
           <a href="https://boomgoat.github.io/Squaberry">
-            <img src="./Images/logo.png" class="col-6 offset-3" alt="">
+            <div class="portfolio-card" id="squaberry">
+            </div>
           </a>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <img src="./Images/logo.jpg" class="col-6 offset-3" alt="" style="padding-top: 2.5em;">
-
+        <div class="col-md-4 col-sm-6 col-12 portfolio-wrapper">
+          <a href="https://boomgoat.github.io/Squaberry">
+            <div class="portfolio-card" id="omas">
+            </div>
+          </a>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-            <img src="./Images/daftar.png" class="col-6 offset-3" alt="" style="padding-top: 2.5em;">
-
-        </div> 
-        
-        <div class="col-md-4 col-sm-6 col-12">
-            <img src="./Images/lite.png" class="col-6 offset-3" alt="" style="padding-top: 2.5em;">
-
+        <div class="col-md-4 col-sm-6 col-12 portfolio-wrapper">
+          <a href="https://boomgoat.github.io/Squaberry">
+            <div class="portfolio-card" id="daftar">
+            </div>
+          </a>
         </div>
-        <div class="col-md-4 col-sm-6 col-12">
-
+        <div class="col-md-4 col-sm-6 col-12 portfolio-wrapper">
+          <a href="https://boomgoat.github.io/Squaberry">
+            <div class="portfolio-card" id="lite">
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 portfolio-wrapper">
+          <a href="https://boomgoat.github.io/Squaberry">
+            <div class="portfolio-card" id="squaberry">
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -141,3 +152,4 @@
   </div>
 
 </body>
+</html>
