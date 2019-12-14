@@ -1,118 +1,143 @@
 <!DOCTYPE html>
 <head>
-  <title>BoomGoat</title>
-  <link rel="icon" href="Images/b.png">
-  <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css" charset="utf-8">
+  <title>Talha Iqbal Syed</title>
+  <link rel="icon" href="https://img.icons8.com/dusk/64/000000/developer.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-  crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-  </script>
+  <!-- Bootstrap & jQuery -->
+  <script src="https://kit.fontawesome.com/aaee47c90d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Local Scripts & Styles -->
+  <link rel="stylesheet" href="CSS/stylesheet.css" type="text/css" charset="utf-8">
   <script type="text/javascript" src="JS/script.js">
   </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous">
-  </script>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="container-fluid text-center bg">
-    <div class="col-md-12 ">
+  <div class="container-fluid main-body">
 
-    </div>
-    <div class="col-md-2 col-sm-3 hidden-xs center-block main_nav">
-      <div class="login text-center">
-        <h4>LOGIN</h4>
-      </div>
-      <ul class="text-left col-md-12">
-        <li>
-          <a href="#about">
-            <h4>
-              ABOUT
-            </h4>
-          </a>
+    <div id="side-bar" class="col-9 col-md-3 side-block">
+      <ul class="navbar-nav">
+        <li onclick="toggle()" class="nav-item active col-9 offset-3 text-left">
+          <a class="nav-link side-link" href="#landing">Home</a>
         </li>
-        <li>
-          <a href="#services">
-            <h4>
-              SERVICES
-            </h4>
-          </a>
+        <li onclick="toggle()" class="nav-item active col-9 offset-3 text-left">
+          <a class="nav-link side-link" href="#about">About</a>
         </li>
-        <li>
-          <a href="#projects">
-            <h4>
-              PROJECTS
-            </h4>
-          </a>
+        <li onclick="toggle()" class="nav-item active col-9 offset-3 text-left">
+          <a class="nav-link side-link" href="#portfolio">Portfolio</a>
         </li>
-        <li>
-          <a href="#quotation">
-            <h4>
-              QUOTATION
-            </h4>
-          </a>
+        <li onclick="toggle()" class="nav-item active col-9 offset-3 text-left">
+          <a class="nav-link side-link" href="#contact">Contact</a>
         </li>
-        <li>
-          <a href="#contact">
-            <h4>
-              CONTACT
-            </h4>
-          </a>
+        <li onclick="toggle()" class="nav-item spacer active col-9 offset-3 text-left">
+          <a class="nav-link side-link col-3" href="https://www.linkedin.com/in/talhaiqbalsyed/"><i class="fab fa-linkedin"></i></a>
+          <a class="nav-link side-link col-3 offset-1" href="https://www.instagram.com/talhaiqbalsyed/"><i class="fab fa-instagram"></i></a>
+          <a class="nav-link side-link col-3 offset-1" href="https://www.github.com/boomgoat/"><i class="fab fa-github-alt"></i></a>
         </li>
       </ul>
-      <a href="#boomsy">
-        <div class="nav_item center-block col-md-12 text-center boom">
-        </div>
-      </a>
+    </div>
+    <div class="overlay" id="menu-overlay">
+
+    </div>
+    <div class="nav-toggle">
+        <i id="nav-toggle" onclick="toggle()" class="fas fa-hamburger"></i>
     </div>
 
-    <div class="main_scroll col-md-10 col-sm-9">
-
-      <div class="container col-md-12" id="about">
-
-
-      </div> <!-- container End -->
-
-      <div class="container col-md-12" id="services">
-
-
-      </div> <!-- container End -->
-
-      <div class="container col-md-12" id="projects">
-        <div class="col-md-12 eleanor text-center">
-          <a href="https://boomgoat.github.io/eleanor">
-            <img src="projects/eleanor.png" class="col-md-offset-3 col-md-6" alt="">
+    <section class="landing row" id="landing">
+      <div class="title col-md-6 col-12 offset-md-6">
+        <h1>
+          Hey! My name is<br>
+          <span class="bold">Talha Iqbal Syed</span> <br>
+        </h1>
+        <p>
+          I'm a <span class="bold">frontend developer</span> who's<br>
+          into <span class="bold">design</span> & all things new & shiny!<br>
+        </p>
+        <button type="button" class="btn btn-light">Check out my work!</button>
+      </div>
+    </section>
+    
+    <section class="about row" id="about">
+        <div class="title col-md-6 col-sm-12 col-12 offset-md-1">
+          <h1>
+            <span class="bold">
+              Here are a few <br>
+              things about me
+            </span> <br>
+          </h1>
+          <!-- <p>
+            (That you probably don't want to hear)
+          </p> -->
+        </div>
+        <div class="title col-md-4 col-sm-12 col-12">
+          <p>
+              I am from Pakistan, born and raised and still 
+              being raised according to some people. 
+              I completed my O'levels degree in 2012, 
+              A'levels in 2014 and my <span class="bold">Bachelor's Degree in 
+              Computer Science</span> in 2020. <br><br>
+              
+              I have a two and a half year experience as a <span class="bold">front -
+              end dev</span> with the wonderful people at <span class="bold red">SQUABERRY 
+              STUDIOS</span>. <br><br>
+              
+              I love ReactJS, I love UI design even more, and 
+              I absolutely adore watching good designs come 
+              to life. 
+          </p>
+        </div>
+    </section>
+    
+    <section class="portfolio" id="portfolio">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-12">
+          <a href="https://boomgoat.github.io/Squaberry">
+            <img src="./Images/logo.png" class="col-6 offset-3" alt="">
           </a>
         </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="./Images/logo.jpg" class="col-6 offset-3" alt="" style="padding-top: 2.5em;">
 
-      </div> <!-- container End -->
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="./Images/daftar.png" class="col-6 offset-3" alt="" style="padding-top: 2.5em;">
 
-      <div class="container col-md-12" id="quotation">
+        </div> 
+        
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="./Images/lite.png" class="col-6 offset-3" alt="" style="padding-top: 2.5em;">
 
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
 
-      </div> <!-- container End -->
-
-      <div class="container col-md-12" id="contact">
-
-
-      </div> <!-- container End -->
-
-      <div class="col-md-12 footer">
-
+        </div>
       </div>
-
-    </div>
-
-
-
-
-  </div> <!-- container-fluid End -->
+    </section>
+    
+    <section class="contact" id="contact">
+      <hr>
+      <div class="title col-md-6 col-sm-12 col-12 offset-md-3 text-center">
+          <h1>
+            <span class="bold">
+              Interested in a cup of coffee?
+            </span> <br>
+          </h1>
+          <p>
+              <span class="bold">
+                Call me : 
+              </span>(+92) 320 5497 541 <br>
+              or <br>
+              <span class="bold">
+                  Email me : 
+              </span>talhaiqbalsyed@hotmail.com
+          </p>
+        </div>
+    </section>
+  </div>
 
 </body>

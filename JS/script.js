@@ -1,16 +1,11 @@
-$(document).ready(function(){
-  $(function() {
-  $('a').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('.container-fluid, .main_scroll').animate({
-          scrollTop: $('.main_scroll').scrollTop() + target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-});
+function toggle() {
+  var hamburger = document.getElementById("nav-toggle");
+  var menu = document.getElementById("side-bar");
+  var overlay = document.getElementById("menu-overlay");
+  hamburger.classList.toggle("rotate");
+  hamburger.classList.toggle("toggle-active");
+  menu.classList.toggle("slide");
+  overlay.classList.toggle("overlay-fadeIn");
+}
+
+const mq = window.matchMedia( "(min-width: 780px)" );
