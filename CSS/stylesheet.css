@@ -90,7 +90,7 @@ section{
 }
 
 .landing{
-  background-image: url('../Images/Landing.png');
+  background-image: url('../Images/Landing.webp');
   background-repeat: no-repeat;
   background-size: 35vw;
   background-position: left 10em bottom -10em;
@@ -192,28 +192,28 @@ section{
 }
 
 #squaberry{
-  background-image: url('../Images/logo.png');
+  background-image: url('../Images/logos.webp');
   background-position: center;
   background-size: 10em;
   background-repeat: no-repeat;
 }
 
 #omas{
-  background-image: url('../Images/logo.jpg');
+  background-image: url('../Images/logo.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #daftar{
-  background-image: url('../Images/daftar.png');
+  background-image: url('../Images/daftar.webp');
   background-position: center;
   background-size: 10em;
   background-repeat: no-repeat;
 }
 
 #lite{
-  background-image: url('../Images/lite.png');
+  background-image: url('../Images/lite.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
