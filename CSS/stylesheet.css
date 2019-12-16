@@ -28,7 +28,6 @@ section{
   position: fixed;
   right: 0;
   z-index: 10;
-  cursor: pointer;
 }
 
 .toggle-active{
@@ -37,6 +36,7 @@ section{
 
 #nav-toggle{
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .rotate{
