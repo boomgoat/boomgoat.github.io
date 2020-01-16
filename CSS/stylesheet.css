@@ -17,7 +17,7 @@ html {
 body{
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden!important;
   font-family: 'Roboto';
 }
 
@@ -36,7 +36,7 @@ section{
   font-size: 2em;
   padding: 2em;
   position: fixed;
-  right: 0;
+  right: 1em;
   z-index: 10;
 }
 
@@ -145,7 +145,7 @@ section{
 .scroll-prompt{
   position: absolute;
   bottom: 1em;
-  left: 50vw;
+  left: 48vw;
   font-weight: 900;
   color: black;
   animation: bounce 1.5s infinite;
@@ -251,6 +251,12 @@ section{
   color: rgba(255, 255, 255, 0.5)
 }
 
+.skill-wrapper{
+  padding-right: 0!important;
+  padding-top: 15vh;
+  margin: 0!important;
+}
+
 .funsies{
   background-image: url("../Images/credit.webp");
   background-size: contain;
@@ -270,7 +276,7 @@ hr{
     padding: 0.5em;
   }
   .spacer{
-    margin-top: 20vh!important;
+    margin-top: 10vh!important;
   }
   .title{
     top: 5em;
@@ -281,6 +287,9 @@ hr{
   }
   .title p{
     font-size: 5vw;
+  }
+  .scroll-prompt{
+    left: 40vw;
   }
   .about{
     padding: 3em;
@@ -312,6 +321,11 @@ hr{
   .portfolio-card{
     min-height: 4em;
     max-width: 4em!important;
+  }
+  .funsies{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
