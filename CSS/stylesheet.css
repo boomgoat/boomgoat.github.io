@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Dosis';
+  font-family: 'Roboto';
 }
 
 .container-fluid{
@@ -90,10 +90,10 @@ section{
 }
 
 .landing{
-  background-image: url('../Images/Landing.webp');
+  background-image: url('../Images/08.webp');
   background-repeat: no-repeat;
   background-size: 35vw;
-  background-position: left 10em bottom -10em;
+  background-position: left 10em;
 }
 
 #landing{
@@ -133,11 +133,10 @@ section{
 }
 
 .about{
-  background-color: #4A4A4A;
+  background-color: #2b2b2b;
   -webkit-box-shadow: 0px -3px 39px 0px rgba(0,0,0,0.73);
   -moz-box-shadow: 0px -3px 39px 0px rgba(0,0,0,0.73);
   box-shadow: 0px -3px 39px 0px rgba(0,0,0,0.73);
-  border-radius: 35px;
 }
 
 #about{
@@ -233,6 +232,7 @@ hr{
     margin-top: 20vh!important;
   }
   .title{
+    top: 5em;
     text-align: center;
   }
   .title h1{
@@ -258,7 +258,7 @@ hr{
   }
   .landing{
     background-size: 90vw;
-    background-position: left 0 bottom -10em;
+    background-position: left 0 bottom 0;
   }
   .portfolio{
     height: 150vh;
@@ -296,7 +296,7 @@ hr{
   }
   .landing{
     background-size: 55vw;
-    background-position: left 3em bottom -10em;
+    background-position: left 0em bottom 15em;
   }
   .portfolio-wrapper{
     min-width: 20em!important;
