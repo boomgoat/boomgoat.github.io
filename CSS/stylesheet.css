@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap');
 
+
+@keyframes bounce{
+  0%{bottom: 1em;}
+  50%{bottom: 2em;}
+  70%{bottom: 1em;}
+  85%{bottom: 1.5em;}
+  100%{bottom: 1em;}
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -86,7 +96,7 @@ section{
 }
 
 .spacer{
-  margin-top: 40vh!important;
+  margin-top: 30vh!important;
 }
 
 .landing{
@@ -132,11 +142,24 @@ section{
   box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.11);
 }
 
+.scroll-prompt{
+  position: absolute;
+  bottom: 1em;
+  left: 50vw;
+  font-weight: 900;
+  color: black;
+  animation: bounce 1.5s infinite;
+}
+
 .about{
   background-color: #2b2b2b;
   -webkit-box-shadow: 0px -3px 39px 0px rgba(0,0,0,0.73);
   -moz-box-shadow: 0px -3px 39px 0px rgba(0,0,0,0.73);
   box-shadow: 0px -3px 39px 0px rgba(0,0,0,0.73);
+  background-image: url('../Images/055.webp');
+  background-repeat: no-repeat;
+  background-size: 20vw;
+  background-position: left 15em bottom 3em;
 }
 
 #about{
@@ -218,11 +241,29 @@ section{
   background-repeat: no-repeat;
 }
 
+.skills{
+  background-color: #2b2b2b;
+  padding-top: 20vh;
+}
+
+.skills h1{
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+.funsies{
+  background-image: url("../Images/credit.webp");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 hr{
   width: 30vh;
   border: 3px solid black;
   border-radius: 25px;
 }
+
 
 @media screen and (max-width: 450px){
   .nav-toggle{
@@ -244,6 +285,8 @@ hr{
   .about{
     padding: 3em;
     padding-top: 10vh;
+    background-size: 60vw;
+    background-position: left 5em bottom 0em;
   }
   .about .title p{
     margin-top: 10vh;
@@ -293,6 +336,8 @@ hr{
   }
   .about{
     height: auto;
+    background-size: 40vw;
+    background-position: left 0em bottom 5em;
   }
   .landing{
     background-size: 55vw;
